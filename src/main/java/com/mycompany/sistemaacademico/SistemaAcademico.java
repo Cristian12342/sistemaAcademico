@@ -19,9 +19,16 @@ public class SistemaAcademico {
         System.out.println(persona);
 
         System.out.println( "DATOS DEL OBJETO PERSONA INVITADA");
-        System.out.println("DATOS DEL OBJETO DE PERSONA INVITADA");
-
-        Persona personaInvitada = new Persona(2, "Maria Lopez", "juan@gmail.com", "0987654321");
+        Persona personaInvitada = new Persona(2, "Maria Lopez", "juanes@gmail.com", "0987654321");
         System.out.println(personaInvitada);
+        
+
+        System.out.println("DATOS DEL OBJETO DE PERSONAl INSTITUCIONAL");
+        Persona personaInstitucional = new Persona(4, "Ana Torres", "ana6@gmail.com", "1122334455");
+        System.out.println(personaInstitucional);
+        
+        System.out.println("DATOS DEL OBJETO DE EMPLEADO");
+        Persona empleado = new Persona(3, "Carlos Gomez", "carlos@gmail.com", "5566778899");
+        System.out.println(empleado);
     }
 }

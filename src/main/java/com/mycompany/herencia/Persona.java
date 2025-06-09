@@ -11,10 +11,10 @@ package com.mycompany.herencia;
  */
 public class Persona {
     
-    public  int id;
-    public String Nombre;
-    public String correoPersonal;
-    public String cedula;
+    private  int id;
+    private String Nombre;
+    private String correoPersonal;
+    private String cedula;
 
     public Persona(int id, String Nombre, String correoPersonal, String cedula) {
         this.id = id;
@@ -27,13 +27,12 @@ public class Persona {
     return id;
     
 }
-    public int setid(){
+    public void setid(int id ){
         
-        return this.id;
+        this.id = id;
     }
 
-    public
-    String getNombre() {
+    public  String getNombre() {
     return Nombre;          
     }
 
@@ -45,11 +44,39 @@ public class Persona {
         return correoPersonal;
     }       
 
+    public String agregarCorreoPersonal() {
+        return "Persona agregada :"+Nombre;
+    }
+
+    public void setCorreoPersonal(String correoPersonal) {
+        this.correoPersonal = correoPersonal;
+    }
+    public String getCedula() {
+        return cedula;
+    }
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+    public String agregarPersona() {
+        return "Persona agregada: " + Nombre;
+    }
     //Agregar Persona
 
-
-
+    @Override
+    public String toString() {
+        return "ID=" + id + 
+               "\nNombre =" + Nombre + 
+               "\ncorreoPersonal=" + correoPersonal + 
+               "\ncedula=" + cedula;
+    }
+    
 }
+
+
+
+
+
+
     
    
     

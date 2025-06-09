@@ -18,10 +18,15 @@ public class PersonaInvitada extends Persona {
     public PersonaInvitada(int id, String Nombre, String correoPersonal, String cedula) {
         super(id, Nombre, correoPersonal, cedula);
     }
+    public String agregarPersonaInvitada() {
+        return "Persona invitada agregada: " + getNombre();
+    }
+
     @Override
     public String toString() {
-        return "PersonaInvitada{" + "id=" + id + ", Nombre=" + Nombre + ", correoPersonal=" + correoPersonal + ", cedula=" + cedula + '}';
+        return super.toString() + "\nTipo: Persona Invitada";
     }
+    
     
 }
    
