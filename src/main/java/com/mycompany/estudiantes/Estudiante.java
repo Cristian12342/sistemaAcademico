@@ -1,9 +1,9 @@
-package com.mycompany.herencia;
+package com.mycompany.estudiantes;
 
 public class Estudiante {
     
 
-    private int codigo;
+    public int codigo;
 //constructor
     public Estudiante(int codigo) {
         this.codigo = codigo;
