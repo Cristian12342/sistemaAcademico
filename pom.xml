@@ -10,4 +10,12 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.mycompany.sistemaacademico.SistemaAcademico</exec.mainClass>
     </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>es.blackleg</groupId>
+      <artifactId>libdam</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
 </project>
