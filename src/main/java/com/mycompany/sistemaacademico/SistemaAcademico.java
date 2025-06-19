@@ -6,6 +6,8 @@ package com.mycompany.sistemaacademico;
 
 import com.mycompany.profesores.Escalafon;
 import com.mycompany.profesores.IProfesores;
+import com.mycompany.profesores.Profesor;
+import com.mycompany.profesores.Profesores;
 
 /**
  *
@@ -14,12 +16,12 @@ import com.mycompany.profesores.IProfesores;
 public class SistemaAcademico {
 
     public static void main(String[] args) {
-
-        /*Profesor[] profesor = new Profesor[1];
+/* Profesor[] profesor = new Profesor[1];
         profesor[0] = new Profesor(Escalafon.PRINCIPAL, "Tiempo Completo", 1500.00, "Juan@example.edu.ec", 1, "Juan Perez", "juan.perez@gmail.com", "0102030405");
 
         System.out.println("Datos del Profesor:");
         IProfesores objIProfesores = new Profesores();
-        objIProfesores.imprimirDatos(profesor);*/
+        objIProfesores.imprimirDatos(profesor); */
+       
 }
 }
