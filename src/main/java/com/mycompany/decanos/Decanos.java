@@ -1,6 +1,6 @@
 package com.mycompany.decanos;
 
-public class Decanos {
+public class Decanos implements IDecanos {
 
     /*public boolean verificarCedula() {
         
@@ -8,7 +8,15 @@ public class Decanos {
     }*/
 
     public String agregarDecano() {
-       
-        return "Decano agregado"; 
+        return "";           
     }
+    
+    public void imprimirDatos(Decano[] decano) {
+       
+        for (int i = 0; i < decano.length; i++) {
+            System.out.println("Los Datos del Decano: " + decano[i]);
+        }
+        System.out.println("-----------------------------");
+    }
+
 }
