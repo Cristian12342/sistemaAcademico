@@ -3,7 +3,9 @@ package com.mycompany.decanos;
 public interface IDecanos {
 
     //public boolean verificarCedula();
-    public String agregarDecano();
-    public void imprimirDatos(Decano[] decano);
+   
+    public void imprimirDatos();
+    public boolean agregarDecano(Decano decano);
+    public boolean actualizarDecano(int i, Decano decano);
 
 }

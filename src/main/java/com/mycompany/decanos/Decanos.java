@@ -2,21 +2,36 @@ package com.mycompany.decanos;
 
 public class Decanos implements IDecanos {
 
-    /*public boolean verificarCedula() {
-        
-        return true; 
-    }*/
+    private Decano[] decanos;
+    private int totalDecanos;
 
-    public String agregarDecano() {
-        return "";           
+    public Decanos(int dimension) {
+        
+        decanos = new Decano[dimension];
+        totalDecanos = 0;
+
     }
-    
-    public void imprimirDatos(Decano[] decano) {
-       
-        for (int i = 0; i < decano.length; i++) {
-            System.out.println("Los Datos del Decano: " + decano[i]);
+    public boolean agregarDecano(Decano decano) {
+        if (totalDecanos == decanos.length) {
+            System.out.println("No se puede agregar más decanos, el arreglo está lleno.");
+            return false;
+        }else {
+            decanos[totalDecanos] = decano;
+            totalDecanos = totalDecanos + 1;  
+            return true;
         }
-        System.out.println("-----------------------------");
+    }
+
+    public void imprimirDatos() {
+        for (int i = 0; i < totalDecanos; i++) {
+            System.out.println(decanos[i].toString());
+        }
+    }
+
+    public boolean actualizarDecano(int i, Decano decano) {
+         decanos [i]= decano;
+         return true;
+
     }
 
 }
