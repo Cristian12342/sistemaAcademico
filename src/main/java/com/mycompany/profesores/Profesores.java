@@ -1,7 +1,8 @@
 package com.mycompany.profesores;
 
 public class Profesores implements IProfesores {
- public String agregarProfesor() {
+ 
+    public String agregarProfesor() {
         return "";
     }
 
