@@ -1,6 +1,6 @@
 package com.mycompany.estudiantes;
 
-public class Estudiante {
+public class Estudiante extends PersonalAcademico {
     
 
     public int codigo;
@@ -8,16 +8,11 @@ public class Estudiante {
     public Estudiante(int codigo) {
         this.codigo = codigo;
     }
-
     public int getCodigo() {
         return codigo;
     }
     public void setCodigo(int codigo) {
         this.codigo = codigo;
-    }
-
-    public String agregarEstudiante() {
-        return "Estudiante agregado con código: " + codigo;
     }
 
     @Override

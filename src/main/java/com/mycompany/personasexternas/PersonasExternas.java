@@ -1,6 +1,6 @@
 package com.mycompany.personasexternas;
 
-public class PersonasExternas {
+public class PersonasExternas implements Persona{
 
 
     public String agregarPersonaExterna() {

@@ -4,7 +4,7 @@ public class Trabajadores {
 
     public String AgregarTrabajadores(){
 
-    return "";
+    return " trabajador agregado";
     }
     
 
