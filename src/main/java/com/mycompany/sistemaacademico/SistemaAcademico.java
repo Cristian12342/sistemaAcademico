@@ -40,6 +40,13 @@ System.out.println("---------------Sistema Academico-----------------\n");
         Profesor profesror3 = new Profesor(Escalafon.PRINCIPAL, "Tiempo Completo", 1800.00, "maria.edu.ec", 2, "Maria", "maria12@gmail.com", "02020202");
         profesores.actualizarProfesor(1, profesror3); // Cambia el índice a 1
         profesores.imprimirDatos();
+
+        System.out.println("Eliminando Profesor:\n");
+        // Eliminar un profesor
+        profesores.eliminarProfesor(0);
+        profesores.imprimirDatos();
+        System.out.println("\n");
+        
         System.out.println("\n");
         System.out.println("--------------------------------------");
         System.out.println(" ---------------Decano-----------------\n");
@@ -57,10 +64,16 @@ System.out.println("---------------Sistema Academico-----------------\n");
         decanos.imprimirDatos();
 
         System.out.println("Datos del Decano Modificado:\n");
-        Decano decano3  = new Decano   ("Nivel 3", "Tiempo Completo", 2200.00, "kerly,edu,ec", 1, "Kerly", "kerly1212@gmail,com", "15721321");
+        Decano decano3  = new Decano   ("Nivel 3", "Tiempo Completo", 2200.00, "diego,edu,ec", 3, "Diego", "diego1212@gmail,com", "15721321");
 
         decanos.actualizarDecano(1, decano3);
         decanos.imprimirDatos();
-}
-    
+        System.out.println("\n");
+        System.out.println("--------------------------------------");
+        System.out.println("Eliminando Decano:\n");
+        // Eliminar un decano
+        decanos.eliminarDecano(0);
+        decanos.imprimirDatos();
+    }
+
 }

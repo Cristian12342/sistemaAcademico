@@ -16,9 +16,7 @@ public class Estudiante {
         this.codigo = codigo;
     }
 
-    public String agregarEstudiante() {
-        return "Estudiante agregado con código: " + codigo;
-    }
+
 
     @Override
     public String toString() {

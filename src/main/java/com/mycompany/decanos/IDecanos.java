@@ -7,5 +7,6 @@ public interface IDecanos {
     public void imprimirDatos();
     public boolean agregarDecano(Decano decano);
     public boolean actualizarDecano(int i, Decano decano);
+    public boolean eliminarDecano(int i);
 
 }

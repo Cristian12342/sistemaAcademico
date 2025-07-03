@@ -24,14 +24,22 @@ public class Decanos implements IDecanos {
 
     public void imprimirDatos() {
         for (int i = 0; i < totalDecanos; i++) {
-            System.out.println(decanos[i].toString());
+            if (decanos[i] != null) {
+                System.out.println(decanos[i].toString());
+            }
         }
     }
 
     public boolean actualizarDecano(int i, Decano decano) {
          decanos [i]= decano;
          return true;
-
     }
 
+    // Metodfo para eliminar un decano
+    public boolean eliminarDecano(int i) {
+        decanos[i] = null;
+        return true;
+
+
+}
 }

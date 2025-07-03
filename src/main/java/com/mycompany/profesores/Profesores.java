@@ -26,7 +26,9 @@ public class Profesores implements IProfesores {
 
     public void imprimirDatos() {
         for (int i = 0; i < totalProfesores; i++) {
-            System.out.println(profesores[i].toString());
+            if (profesores[i] != null) {
+                System.out.println(profesores[i].toString());
+            }
         }
     }
 
@@ -34,6 +36,10 @@ public class Profesores implements IProfesores {
          profesores [i]= profesor;
          return true;
 
+    }
+    public boolean eliminarProfesor(int i) {
+        profesores[i] = null;
+        return true;
     }
     
 

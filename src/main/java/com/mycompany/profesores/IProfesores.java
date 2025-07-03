@@ -7,5 +7,6 @@ public interface IProfesores {
     public void imprimirDatos( );
     
     public boolean actualizarProfesor(int i, Profesor profesor);
+    public boolean eliminarProfesor(int i);
 
 }
