@@ -4,6 +4,8 @@
  */
 package com.mycompany.decanos.vistas;
 
+import com.mycompany.decanos.controlador.ControladorEstudiantes;
+
 /**
  *
  * @author Calavera
@@ -14,12 +16,13 @@ public class VEstudiantes extends javax.swing.JFrame {
      * Creates new form VEstudiantes
      */
     
-    private ControladorEstudiantes ControladorEstudiantes;
-            
+    private ControladorEstudiantes controladorEstudiantes;
+
     public VEstudiantes() {
         initComponents();
-        ControladorEstudiantes = new ControladorEstudiantes(this);
+        controladorEstudiantes = new ControladorEstudiantes(this);
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -146,10 +149,24 @@ public class VEstudiantes extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+public String getCedulaEstudiante(){
+    return txtCedula.getText();
+}
+public String getNombreEstudiante(){
+    return txtNombre.getText();
+}
+public String getCodigoEstudiante(){
+    return txtCodigoEstudiante.getText();
+}
+public String getCorreoPersonal(){
+    return txtCorreoPersonal.getText();
+}
 
-
+public String getCorreoInstitucional(){
+    return txtCorreoInstitucional.getText();
+}
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        controladorEstudiantes.agregarEstudiante();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtCodigoEstudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoEstudianteActionPerformed
@@ -194,21 +211,6 @@ public class VEstudiantes extends javax.swing.JFrame {
             }
         });
     }
-public String getCorreoInstitucional(){
-    return txtCorreoInstitucional.getText();
-}
-public String getCedulaEstudiante(){
-    return txtCedula.getText();
-}
-public String getNombreEstudiante(){
-    return txtNombre.getText();
-}
-public String getCodigoEstudiante(){
-    return txtCodigoEstudiante.getText();
-}
-public String getCorreoPersonal(){
-    return txtCorreoPersonal.getText();
-}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
