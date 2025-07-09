@@ -13,6 +13,7 @@ public class Profesores implements IProfesores {
         totalProfesores = 0;
 
     }
+    
     public boolean agregarProfesor(Profesor profesor) {
         if (totalProfesores == profesores.length) {
             System.out.println("No se puede agregar más decanos, el arreglo está lleno.");

@@ -2,9 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package com.mycompany.decanos.controlador;
+package com.mycompany.controlador;
 
-import com.mycompany.decanos.vistas.VEstudiantes;
+import com.mycompany.vistas.VEstudiantes;
+import com.mycompany.estudiantes.Estudiante;
+import com.mycompany.estudiantes.IEstudiante;
+import com.mycompany.estudiantes.Estudiantes;
 
 /**
  *
@@ -36,9 +39,21 @@ public class ControladorEstudiantes {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    
     }
-
     public void agregarEstudiante() {
-        System.out.println("Funciona el botón");
+        String cedulaEstudiante = vistaEstudiantes.getCedulaEstudiante();
+        String codigoEstudiante = vistaEstudiantes.getCodigoEstudiante();
+        String nombreEstudiante = vistaEstudiantes.getNombreEstudiante();
+        String correoPersonal = vistaEstudiantes.getCorreoPersonal();
+        String correoInstitucional = vistaEstudiantes.getCorreoInstitucional();
+
+        System.out.println("Agregado Estudiante");
+        System.out.println("Cédula: " + cedulaEstudiante);
+        System.out.println("Código: " + codigoEstudiante);
+        System.out.println("Nombre: " + nombreEstudiante);
+        System.out.println("Correo Personal: " + correoPersonal);
+        System.out.println("Correo Institucional: " + correoInstitucional);
     }
 }
+ 

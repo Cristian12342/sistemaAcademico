@@ -8,6 +8,9 @@ import com.mycompany.profesores.Escalafon;
 import com.mycompany.decanos.Decano;
 import com.mycompany.decanos.Decanos;
 import com.mycompany.decanos.IDecanos;
+
+import com.mycompany.estudiantes.Estudiante;
+import com.mycompany.vistas.VEstudiantes;
 /**
  *
  * @author Calavera
@@ -15,10 +18,23 @@ import com.mycompany.decanos.IDecanos;
 public class SistemaAcademico {
 
     public static void main(String[] args) {
+        
+        
+        VEstudiantes vestudiantes=new VEstudiantes();
+        vestudiantes.setVisible(true);
 
 System.out.println("---------------Sistema Academico-----------------\n");
 
 
+    System.out.println("---------------Estudiantes-----------------\n");
+        
+        // Crear un arreglo de Estudiantes
+        Estudiante estudiante1 = new Estudiante("juan@espoch.edu.ec", 101, 1, "Juan", "juan@gmail.com", "01010101");
+         System.out.println(estudiante1);
+
+
+
+/* 
     System.out.println("---------------Personal Academico-----------------");
 
     System.out.println("---------------Profesor-----------------\n");
@@ -30,7 +46,6 @@ System.out.println("---------------Sistema Academico-----------------\n");
         
         profesores.agregarProfesor(profesror1);
         profesores.agregarProfesor(profesror2);
-
         profesores.imprimirDatos();
 
         System.out.println("---------------------------------");
@@ -74,6 +89,7 @@ System.out.println("---------------Sistema Academico-----------------\n");
         // Eliminar un decano
         decanos.eliminarDecano(0);
         decanos.imprimirDatos();
+        */
     }
 
 }
