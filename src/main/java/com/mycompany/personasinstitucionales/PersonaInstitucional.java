@@ -3,7 +3,7 @@ package com.mycompany.personasinstitucionales;
 
 import com.mycompany.personas.Persona;
 
-public abstract class PersonaInstitucional extends Persona {
+public class PersonaInstitucional extends Persona {
     
     
     private String correoInstitucional;
@@ -15,6 +15,15 @@ public abstract class PersonaInstitucional extends Persona {
         super(id, nombre, correoPersonal, cedula);
         this.correoInstitucional = correoInstitucional;
     }
+    
+     public  String setcorreoInstitucional(){
+        return this.correoInstitucional = correoInstitucional;
+
+    }
+    public String getcorreoInstitucional(){
+        return correoInstitucional;
+    }
+
     @Override
     public String toString() {
         return "PersonaInstitucional{" + super.toString() + "correoInstitucional='" + correoInstitucional + '\'' + '}';

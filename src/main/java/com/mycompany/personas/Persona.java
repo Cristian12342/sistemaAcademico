@@ -22,8 +22,34 @@ public class Persona {
         this.correoPersonal = correoPersonal;
         this.cedula = cedula;
     }
-    
 
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCorreoPersonal() {
+        return correoPersonal;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public String setCedula(){
+
+        return this.cedula=cedula;
+    }
+    public String setNombre(String nombre){
+        return this.nombre=nombre;
+    }
+    public String setCorreoPersonal(String correoPersonal){
+        return this.correoPersonal=correoPersonal;
+    }
+    
     @Override
     public String toString() {
         return "Persona{" + "id=" + id + ", nombre=" + nombre + ", correoPersonal=" + correoPersonal + ", cedula=" + cedula + '}';
